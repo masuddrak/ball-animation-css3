@@ -1,0 +1,51 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* animation criat */
+@keyframes sliding {
+    0%{
+        background-color: limegreen;
+        left: 0px;
+        top: -20px;
+        transform: scale(.5);
+    }
+    25%{
+        background-color: red;
+        top: ;
+        top:120px ;
+        transform: scale(1);
+    }
+    50%{
+        background-color: seagreen;
+        top: -20px;
+        transform: scale(0.5);
+    }
+    75%{
+        background-color: tomato;
+        top: 120px;
+        transform: scale(1);
+    }
+    100%{
+        background-color: magenta;
+        left: 420px;
+        top: -20px;
+        transform: scale(0.5);
+    }
+}
+/* stage animatin */
+.stage{
+    width: 500px;
+    height: 200px;
+    background-color: aquamarine;
+}
+/* ball animation */
+.ball{
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 50%;
+    position: relative;
+    animation: sliding 5s ease-in-out 0.5s infinite alternate ;
+    animation-play-state: running;
+
+}
